@@ -1,0 +1,11 @@
+.breadcrumb{
+    ul{
+        @apply flex items-center space-x-2 text-[var(--gray-text-color)];
+    }
+    a{
+        @apply hover:text-[var(--primary-color)];
+    }
+    span{
+        @apply text-[var(--primary-color)];
+    }
+}

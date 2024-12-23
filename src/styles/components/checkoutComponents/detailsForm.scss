@@ -1,0 +1,19 @@
+.two-in-on-row{
+    @apply flex space-x-4;
+}
+
+.order-notes{
+    @apply pt-2 pb-2;
+
+    label{
+        @apply block text-sm font-medium text-[var(--primary-text-color)];
+
+        span{
+            @apply text-[var(--gray-placeholder-color)];
+        }
+    }
+
+    .text-area{
+        @apply mt-1 block w-full px-4 py-2 border border-[var(--gray-border-color)] rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)];
+    }
+}

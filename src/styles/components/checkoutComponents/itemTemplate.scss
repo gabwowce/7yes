@@ -1,0 +1,63 @@
+.item-template {
+    @apply relative flex items-start justify-between p-4 border-b;
+  
+    .item-img {
+      @apply w-28 h-28 flex-shrink-0; 
+      img {
+        @apply w-full h-full object-cover;
+      }
+    }
+  
+    .first-col {
+      @apply flex-grow pl-4 flex flex-col justify-start min-w-0;
+  
+      .title {
+        @apply text-lg font-medium leading-[1.2];
+
+      }
+  
+      .specifications {
+        @apply text-sm text-gray-600;
+        ul {
+          @apply flex flex-wrap py-2; 
+        }
+        li {
+          @apply mr-2;
+
+          .key{
+            @apply text-[var(--gray-placeholder-color)]
+          }
+
+          .highlighted{
+            @apply font-semibold;
+          }
+
+        }
+      }
+    }
+
+    .add-remove{
+        @apply flex space-x-2 mt-2 items-center;
+
+        .count{
+            @apply px-4 py-1;
+        }
+    }
+  
+    .second-col {
+        @apply ml-auto flex flex-col items-end space-y-2;
+
+      .price{
+        @apply pl-2 text-xl font-semibold;
+      }
+
+      .old-price{
+        @apply text-sm text-gray-400 line-through;
+      }
+
+    }
+    .delete-btn{
+        @apply absolute right-5 bottom-7 size-[var(--bigger-icon-width)] text-[var(--gray-text-color)] hover:text-red-700;
+       }
+  }
+  

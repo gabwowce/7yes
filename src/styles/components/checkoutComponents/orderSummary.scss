@@ -1,0 +1,13 @@
+.order-summary{
+    @apply sticky top-20 bg-[var(--background-color)] h-screen overflow-y-auto;
+    h2{
+        @apply pb-8; 
+
+        span{
+            @apply text-lg font-semibold text-[var(--gray-placeholder-color)];
+        }
+    }
+    
+    
+    
+}

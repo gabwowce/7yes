@@ -1,0 +1,11 @@
+.logo{
+    @apply text-3xl lg:text-4xl flex items-center space-x-3 font-bold;
+
+    h1{
+        @apply text-[var(--logo-first)] whitespace-nowrap;
+
+        span{
+            @apply text-[var(--logo-second)];
+        }
+    }
+}

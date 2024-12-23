@@ -1,0 +1,27 @@
+.option-template{
+    @apply flex flex-col gap-1 py-3 w-full;
+
+    .first-row{
+        @apply flex items-center justify-between;
+
+        div{
+            @apply flex items-center;
+
+            label{
+                @apply ml-2 text-sm font-medium text-[var(--primary-text-color)];
+            }
+        }
+
+        .price{
+            @apply text-base font-semibold text-[var(--primary-text-color)];
+        }
+    }
+
+    .second-row{
+        @apply pl-6;
+
+        .description{
+            @apply text-sm text-[var(--gray-text-color)];
+        }
+    }
+}

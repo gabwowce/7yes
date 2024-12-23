@@ -1,0 +1,29 @@
+.checkout {
+    @apply flex gap-10 lg:gap-20 xl:gap-40;
+    @apply flex-col md:flex-row;
+
+    section {
+        @apply w-full md:w-1/2;
+
+        h2 {
+            @apply text-3xl lg:text-4xl font-semibold text-[var(--primary-text-color)];
+        }
+    
+        legend {
+            @apply text-base text-[var(--primary-text-color)] py-8;  
+    
+            span{
+                @apply underline;
+            }
+        }
+
+        .privacity-policy{
+            @apply pt-4 font-normal text-sm text-[var(--gray-text-color)];
+
+            a{
+                @apply text-[var(--primary-color)] underline cursor-pointer;
+            }
+        }
+    }
+    
+}

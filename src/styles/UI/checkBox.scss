@@ -1,0 +1,28 @@
+.check-box {
+    @apply flex items-center py-4;
+
+    input[type="checkbox"] {
+        @apply h-4 w-4 cursor-pointer transition-all border-[var(--gray-border-color)] accent-[var(--primary-color)];
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 5px !important;
+        -webkit-border-radius: 5px !important;
+        border: 1px solid var(--gray-border-color);
+        flex-shrink: 0; /* Checkboxas nesusitrauks */
+
+        &:checked {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+        }
+    }
+
+    label {
+        @apply ml-2 block text-sm font-medium text-[var(--primary-text-color)];
+        line-height: 1.5; /* Užtikrina gražų teksto formatavimą */
+    }
+}

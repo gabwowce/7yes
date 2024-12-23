@@ -1,0 +1,61 @@
+@use './components/navbar.scss';
+@use './components//breadcrumb.scss';
+@use './components/logo.scss';
+@use './components/checkout.scss';
+@use './components//footer.scss';
+
+@use './UI/checkBox.scss';
+@use './UI/ratioButton.scss';
+@use './UI/button.scss';
+@use './UI/inputField.scss';
+@use './UI/selectField.scss';
+
+@use './components/checkoutComponents/optionTemplate.scss';
+@use './components/checkoutComponents/itemTemplate.scss';
+@use './components/checkoutComponents/orderSummary.scss';
+@use './components/checkoutComponents/detailsForm.scss';
+
+:root {
+    --primary-color: #448c74;
+    --primary-hover-color: #43816e;
+    --gray-text-color: #686D78;
+    --primary-text-color: #E2E8F0;
+    --gray-border-color: rgb(209, 213, 219, 0.5);
+    --gray-placeholder-color: rgb(156, 163, 175, 0.4);
+    --small-icon-width: 20px;
+    --small-icon-height: 20px;
+    --bigger-icon-width: 24px;
+    --bigger-icon-height: 24px;
+    --background-color: #232429;
+    --second-background-color: #181d28;
+    --text-color: #e2e8f0;
+    --logo-first: #008000;
+    --logo-second: #e2e8f0;
+  }
+  
+  .light {
+    --background-color: #FFFFFF;
+    --text-color: #3C3D3D;
+    --logo-second: black;
+    --second-background-color: #F9FAFB;
+    --gray-placeholder-color: #9CA3AF;
+    --primary-text-color: #121519;
+    --gray-border-color: #D1D5DB;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .container {
+    @apply max-w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl mx-auto p-4;
+  }
+  
+  .arrow-icon {
+    @apply w-4 h-4 ml-2 mt-1;
+  }
+  
+  .small-icon{
+    @apply h-[var(--small-icon-width)] w-[var(--small-icon-height)];
+}
