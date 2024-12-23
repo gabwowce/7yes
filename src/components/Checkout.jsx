@@ -19,6 +19,7 @@ const Checkout = () => {
        price:'$23.00', itemCount: 1, imageUrl: item2},
     { id: 3, title: "Set for a dinner party of 7 items", specifications: { },
        price:'$47.00', itemCount: 1, imageUrl: item3},
+       
 
   ];
 

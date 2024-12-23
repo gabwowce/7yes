@@ -1,8 +1,8 @@
 .item-template {
-    @apply relative flex items-start justify-between p-4 border-b;
+    @apply relative flex items-start justify-between p-2 md:p-4 border-b;
   
     .item-img {
-      @apply w-28 h-28 flex-shrink-0; 
+      @apply w-20 h-20 md:w-28 md:h-28 flex-shrink-0; 
       img {
         @apply w-full h-full object-cover;
       }
