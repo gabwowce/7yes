@@ -1,7 +1,7 @@
 .checkout {
     @apply flex gap-10 lg:gap-20 xl:gap-40;
     @apply flex-col-reverse md:flex-row;
-    @apply relative;
+    @apply relative max-w-[1200px];
 
     section {
         @apply w-full md:w-1/2;

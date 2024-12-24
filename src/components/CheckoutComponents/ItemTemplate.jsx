@@ -46,17 +46,23 @@ const ItemTemplate = ({ item, onUpdateCount, onRemoveItem }) => {
       </div>
 
       <div className="second-col">
-          {item.priceAfterDiscount ? (
-            <>
-              <h3 className="price">{calculatePrice(item.priceAfterDiscount)}</h3>
-              <h3 className="old-price">{calculatePrice(item.price)}</h3>
-            </>
-          ) : (
-            <h3 className="price">{calculatePrice(item.price)}</h3>
-          )}
+          <div className="price-wrapper">
+              {item.priceAfterDiscount ? (
+                  <>
+                      <h3 className="price">{calculatePrice(item.priceAfterDiscount)}</h3>
+                      <h3 className="old-price">{calculatePrice(item.price)}</h3>
+                  </>
+              ) : (
+                  <h3 className="price">{calculatePrice(item.price)}</h3>
+              )}
+          </div>
+          <IconButton 
+                  icon={<TrashIcon className="delete-btn" />} 
+                  onClick={() => onRemoveItem(item.id)} 
+              />
       </div>
 
-      <IconButton icon={<TrashIcon className="delete-btn" />} onClick={() => onRemoveItem(item.id)} />
+      
       
     </div>
   );

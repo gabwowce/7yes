@@ -3,7 +3,7 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
 function Breadcrumb() {
   return (
-    <nav className="container breadcrumb">
+    <nav className="breadcrumb">
       <ul>
         <li>
           <a href="#">Home</a>

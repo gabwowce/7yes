@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from './Logo.jsx';
 import MenuItem from './MenuItem.jsx';
 import ThemeSwitcher from './UI/ThemeSwitcher.jsx';
@@ -17,6 +17,20 @@ function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
   const [activeAccordion, setActiveAccordion] = useState(null); 
 
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const toggleDropdown = (menu, isOpen) => {
     setDropdownOpen((prev) => ({

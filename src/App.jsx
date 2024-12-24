@@ -1,4 +1,3 @@
-
 import './styles/globals.scss';
 import React from 'react';
 import Navbar from './components/Navbar';
@@ -7,16 +6,12 @@ import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 
 function App() {
-
   return (
-    <>
-     <Navbar/>
-     <Breadcrumb/>
-     <Checkout/>
-     <Footer/>
-    </>
-   
-
+    <div className="app-container">
+      <Navbar />
+      <Checkout />
+      <Footer />
+    </div>
   );
 }
 

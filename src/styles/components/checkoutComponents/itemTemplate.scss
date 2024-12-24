@@ -1,8 +1,9 @@
 .item-template {
-    @apply relative flex items-start justify-between p-2 md:p-4 border-b;
+    @apply flex items-start justify-between py-2 md:py-4 lg:py-8 border-t min-h-[100px] ;
+
   
     .item-img {
-      @apply w-20 h-20 md:w-28 md:h-28 flex-shrink-0; 
+      @apply w-16 h-16 md:w-28 md:h-28 flex-shrink-0; 
       img {
         @apply w-full h-full object-cover;
       }
@@ -37,27 +38,34 @@
     }
 
     .add-remove{
-        @apply flex space-x-2 mt-2 items-center;
+        @apply flex space-x-2 mt-2 lg:mt-4 items-center;
 
         .count{
-            @apply px-4 py-1;
+            @apply px-2 md:px-4 py-1;
         }
     }
   
     .second-col {
-        @apply ml-auto flex flex-col items-end space-y-2;
+      @apply ml-auto flex flex-col justify-between h-full min-h-[100px]; 
+  
 
-      .price{
-        @apply pl-2 text-xl font-semibold;
+        .price-wrapper {
+          @apply flex flex-col items-end;
+  
+          .price { 
+              @apply pl-2 text-xl font-semibold; 
+          } 
+  
+          .old-price { 
+              @apply text-sm text-gray-400 line-through; 
+          } 
       }
 
-      .old-price{
-        @apply text-sm text-gray-400 line-through;
-      }
+      .delete-btn { 
+        @apply size-[var(--bigger-icon-width)] text-[var(--gray-text-color)] hover:text-red-700; 
+    } 
 
     }
-    .delete-btn{
-        @apply absolute right-5 bottom-7 size-[var(--bigger-icon-width)] text-[var(--gray-text-color)] hover:text-red-700;
-       }
+    
   }
   

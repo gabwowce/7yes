@@ -11,7 +11,7 @@ const OptionTemplate = ({ label, description, price, name, value, checked, onCha
                 checked={checked}
                 onChange={onChange}
               />
-              <label htmlFor={value}> 4755
+              <label htmlFor={value}>
                 {label}
               </label>
             </div>

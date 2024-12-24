@@ -29,7 +29,7 @@
 
 
     .mobile-menu{
-        @apply lg:hidden;
+        @apply block lg:hidden;
 
         .menu-item{
             @apply flex flex-col space-y-4;

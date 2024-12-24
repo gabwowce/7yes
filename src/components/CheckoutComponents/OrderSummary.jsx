@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ItemTemplate from "./ItemTemplate";
-
+import VirtualRecept from './VirtualRecept';
 
 const OrderSummary = ({ initialItems  }) => {
 
@@ -25,6 +25,7 @@ const OrderSummary = ({ initialItems  }) => {
           <h2 id="order-summary">
             Order Summary <span>({items.length} items)</span>
           </h2>
+          <div className='items'>
           {items.map(item => (
             <ItemTemplate
               key={item.id}
@@ -33,6 +34,10 @@ const OrderSummary = ({ initialItems  }) => {
               onRemoveItem={removeItem}
             />
           ))}
+          </div>
+          
+          <VirtualRecept subtotal={92.00} taxes={8.00} shippingCost={15.00} />
+
         </section>
       );
     };

@@ -14,14 +14,15 @@
 @use './components/checkoutComponents/itemTemplate.scss';
 @use './components/checkoutComponents/orderSummary.scss';
 @use './components/checkoutComponents/detailsForm.scss';
+@use './components/checkoutComponents/virtualRecept.scss';
 
 :root {
     --primary-color: #448c74;
     --primary-hover-color: #43816e;
-    --gray-text-color: #686D78;
+    --gray-text-color: #989ca5;
     --primary-text-color: #E2E8F0;
     --gray-border-color: rgb(209, 213, 219, 0.5);
-    --gray-placeholder-color: rgb(156, 163, 175, 0.4);
+    --gray-placeholder-color: rgba(188, 193, 201, 0.4);
     --small-icon-width: 20px;
     --small-icon-height: 20px;
     --bigger-icon-width: 24px;
@@ -41,6 +42,7 @@
     --gray-placeholder-color: #9CA3AF;
     --primary-text-color: #121519;
     --gray-border-color: #D1D5DB;
+    --gray-text-color: #686D78;
   }
   
   body {

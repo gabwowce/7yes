@@ -1,0 +1,37 @@
+.virtual-recept{ 
+    @apply border-t; 
+
+    .coupon-input{
+        @apply flex items-center p-2 px-4 my-8 border border-dashed rounded-2xl border-[var(--gray-placeholder-color)] w-auto lg:w-2/3;
+
+        input{
+            @apply flex-1 p-1.5 mr-2 border-none outline-none rounded text-sm bg-[var(--background-color)];
+        }
+
+    }
+    .cost-items {  
+        @apply py-4;
+        .cost-item{ 
+            @apply flex justify-between items-center pb-2; 
+            
+            .label{ 
+                @apply text-[var(--gray-text-color)]; 
+            }         
+            .value{ 
+                @apply text-[var(--gray-text-color)] font-semibold; 
+            }          
+        }
+    }
+    
+    .total{ 
+        @apply flex justify-between items-center pt-8 border-t; 
+        .total-label{ 
+            @apply text-lg text-[var(--gray-text-color)]; 
+            transform: scaleY(1.15);
+        } 
+        .total-value{ 
+            @apply text-xl text-[var(--primary-text-color)] font-bold; 
+            transform: scaleY(1.15);
+        } 
+    } 
+}
