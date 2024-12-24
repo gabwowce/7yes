@@ -27,11 +27,9 @@
         @apply flex justify-between items-center pt-8 border-t; 
         .total-label{ 
             @apply text-lg text-[var(--gray-text-color)]; 
-            transform: scaleY(1.15);
         } 
         .total-value{ 
             @apply text-xl text-[var(--primary-text-color)] font-bold; 
-            transform: scaleY(1.15);
         } 
     } 
 }

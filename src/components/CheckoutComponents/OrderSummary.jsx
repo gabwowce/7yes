@@ -22,8 +22,8 @@ const OrderSummary = ({ initialItems  }) => {
 
       return (
         <section aria-labelledby="order-summary" className='order-summary'>
-          <h2 id="order-summary">
-            Order Summary <span>({items.length} items)</span>
+          <h2 id="order-summary" className='order-title'>
+            Order Summary <span className='item-count'>({items.length} items)</span>
           </h2>
           <div className='items'>
           {items.map(item => (

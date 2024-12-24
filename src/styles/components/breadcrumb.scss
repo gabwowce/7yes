@@ -1,7 +1,7 @@
 .breadcrumb{
     ul{
-        @apply flex items-center pb-8 space-x-2 text-[var(--gray-text-color)];
-    }   
+        @apply flex items-center space-x-2 text-[var(--gray-text-color)];
+    }
     a{
         @apply hover:text-[var(--primary-color)];
     }

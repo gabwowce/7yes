@@ -10,7 +10,7 @@ const VirtualRecept = ({ subtotal, taxes, shippingCost }) => {
             <input
             type="text"
             value=""
-            placeholder="YOUR COUPON CODE" />
+            placeholder="YOUR COUPON CODE"/>
             <Button content="Apply coupon" className="gray-button" />
         </div>
       

@@ -5,7 +5,6 @@ import PaymentMethod from "./CheckoutComponents/PaymentMethod";
 import Checkbox from "./UI/CheckBox";
 import Button from "./UI/Button";
 import OrderSummary from "./CheckoutComponents/OrderSummary";
-import Breadcrumb from './Breadcrumb';
 
 import item1 from '../assets/7yes-item-1.png';
 import item2 from '../assets/7yes-item-2.png';
@@ -28,7 +27,6 @@ const Checkout = () => {
     <main className="container checkout">
        
       <section aria-labelledby="form-section">
-      <Breadcrumb />
         <h2 id="form-section">Checkout</h2>
         <fieldset>
           <legend>

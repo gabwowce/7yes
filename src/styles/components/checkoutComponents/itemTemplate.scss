@@ -53,11 +53,11 @@
           @apply flex flex-col items-end;
   
           .price { 
-              @apply pl-2 text-xl font-semibold; 
+              @apply pl-2 text-base md:text-xl font-semibold; 
           } 
   
           .old-price { 
-              @apply text-sm text-gray-400 line-through; 
+              @apply text-xs md:text-sm text-gray-400 line-through; 
           } 
       }
 

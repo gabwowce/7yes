@@ -14,9 +14,10 @@
         max-height: 100vh;
     }
    
-    h2 {
-      @apply pb-8;
-      span {
+    .order-title {
+      @apply pb-4 lg:pb-8 text-2xl lg:text-3xl;
+
+      .item-count{
         @apply text-lg font-semibold text-[var(--gray-placeholder-color)];
       }
     }
